@@ -1,4 +1,17 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+VIRTUAL_ENV="/Users/ENGINE/src/ALL_PROJ/2website_aff/env"
+
+=======
  
+>>>>>>> e31957964017632c3e387eea33f3097ebbf23fb5
+=======
+ 
+>>>>>>> e31957964017632c3e387eea33f3097ebbf23fb5
+=======
+ 
+>>>>>>> e31957964017632c3e387eea33f3097ebbf23fb5
 
 import os
 
@@ -108,10 +121,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/aff/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'aff/static/'),
 ]
 
 
