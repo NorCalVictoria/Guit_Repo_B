@@ -5,8 +5,8 @@
    background: -webkit-linear-gradient(#4E5352, #444948, #444948, #444948, #444948);
    background: -o-linear-gradient(#4E5352, #444948, #444948, #444948, #444948);
    background: linear-gradient(#4E5352, #444948, #444948, #444948, #444948);
-   border-radius: 6px !important;
-   -moz-border-radius: 6px !important;
+  
+   
  }
 
     .nav a{
