@@ -10,7 +10,7 @@
   <meta name="author" content="">
   
   <strong><title href="#">Guitar Awesome</title></strong>
-  <link rel="shortcut icon" type='image/png' href="/aff/images/favicon.png" />
+  <link rel="shortcut icon" type='image/png' href='/aff/images/favicon.png'/>
 
   <!-- Bootstrap core CSS -->
   <link href="{% static 'aff/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -72,6 +72,7 @@
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('{% static '/aff/images/GuitarHeart.jpg' %}')">
           <div class="carousel-caption d-none d-md-block">
+            <div class="overlay-block">overlay</div>
             <h1>Acoustic Guitars</h1>
             <p>Reviews On Top Guitars</p>
           </div>
@@ -79,6 +80,7 @@
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('{% static '/aff/images/ChanBannR.png' %}')">
           <div class="carousel-caption d-none d-md-block">
+            <div class="overlay-block">overlay</div>
             <h1>Acoustic / Electric Guitars</h1>
             <p>Guitars for every artist!</p>
           </div>
@@ -87,6 +89,7 @@
       
         <div class="carousel-item" style="background-image: url('{% static '/aff/images/music_001.jpg' %}')">
           <div class="carousel-caption d-none d-md-block">
+            <div class="overlay-block">overlay</div>
             <h1>Stream Sessions</h1>
             <p>Live Song Requests</p>
           </div>
@@ -236,13 +239,22 @@ amzn_assoc_title = "More Favs";
     <hr>
 
     <!-- Call to Action Section -->
-    <div class="row mb-4">
+    <div class="col mb-4">
       <div class="col-md-8">
         <p>Music styles are many and guitars are no different. Expand and challenge your skills by covering some of the greatests songs from classic to trendy. </p>
       </div>
+  
       <div class="col-md-4">
-        <a class="btn btn-lg btn-warning btn-block" href="#">cover of the week</a>
+
+        <a class="btn btn-lg btn-warning btn-block" href="https://youtu.be/y4FQZ0IB6MA" target="_blank">cover of the week</a>
       </div>
+    </div>
+   <!--  <div class="row-md-4 center">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/y4FQZ0IB6MA?rel=0&amp; controls=0" frameborder="0" allowfullscreen></iframe>
+        </div> -->
+
+
     </div>
 
   </div>
