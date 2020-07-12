@@ -9,16 +9,30 @@
    
  }
 
-    .nav a{
-        color: white !important;
-        font-size: 20px !important;
-    }
-
-
-
-
-
-
+ .nav a{
+    color: white !important;
+    font-size: 20px !important;
+ }
+ 
+ .overlay-block {
+  height: 100vh;
+  width                                                                                                   : 100vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.35;
+  z-index: 1;
+  transition: 0.5s ease;
+  background-color: #225470;
+ 
+}
+/*
+ .carousel-item {
+	background-image: 
+ }
+*/
 
 
  .col-lg-6 {
