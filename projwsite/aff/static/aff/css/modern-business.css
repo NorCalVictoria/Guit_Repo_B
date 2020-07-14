@@ -23,7 +23,7 @@
   left: 0;
   right: 0;
   opacity: 0.40;
-  z-index: 1;
+  z-index: 2;
   transition: 0.5s ease;
   background-color: #225470;
  
