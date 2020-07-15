@@ -20,166 +20,169 @@
 
 </head>
 
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="{% url 'home' %}"><span style="color:whitesmoke; font-size:30pt;">Guitar</span>&nbsp;<span style="color:#FFD300; font-size:32pt;">Awesome</span></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'covers' %}">Covers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'blog' %}">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Privacy Policy</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-
-
-
-<!-- <span style="color:whitesmoke;">Guitar</span>&nbsp;<span style="color:#FFD300;">Awesome</span> -->
-
-
-  <header>
-
-  </header>
-
-  <!-- Page Content -->
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
+    <a class="navbar-brand" href="{% url 'about' %}"><span style="color:whitesmoke; font-size:30pt;">Guitar</span>&nbsp;<span style="color:#FFD300; font-size:32pt;">Awesome</span></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'covers' %}">Covers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Media</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<header>
+
+</header>
+
+<!-- Page Content -->
+
 
 <br/>
-	<hr>
+  <hr>
 <br/>
 
-    <!-- Marketing Icons Section -->
+  <!-- Marketing Icons Section -->
  
 
-    <!-- Portfolio Section -->
-    <strong><h1 class="my-4"> Awesome News</h1> </strong>
+  <!-- Portfolio Section -->
+  <div class="container">
+<!--   <strong><h1 class="my-4">Keep Up !</h1> </strong> -->
 
-    
+  <div class="container-fluid padding">
+    <div class="row welcome text-center" >
+      <div class="col-12" style="padding-top: 20px;">
+        <h1 class="display-4">Music Is Magical</h1>
+      </div>
+      <hr>
+      <div class="col-12">
+        <p class="lead"> Welcome Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit distinctio cumque beatae. Error porro laboriosam voluptatibus laborum, doloremque non quo?</p>
+      </div>
+    </div>
+    </div>
 
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://amzn.to/2RP6ymX"><img class="card-img-top" src="{% static '/aff/images/MartinDCX1AE.jpg' %}" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://amzn.to/2RP6ymX" style="text-decoration:none">Martin DCX1AE</a>
-            </h4>
-            <p class="card-text">A Sitka spruce top is paired with mahogany patterned high-pressure laminate (HPL) back and sides for a very classic looking Martin Dreadnought. This 14-fret guitar cutaway features a hand-rubbed top and neck finish with a Richlite fingerboard and bridge and Fishman Sonitone electronics.</p>
-            <a href="https://amzn.to/2RP6ymX"><button type="button" class="btn btn-warning">$679</button></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://amzn.to/3eGpIF8"><img class="card-img-top" src="{% static '/aff/images/YamahaDread_1.jpg' %}" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://amzn.to/3eGpIF8" style="text-decoration:none">Yamaha Dreadnought</a>
-            </h4>
-            <p class="card-text">The perfect entry level guitar. The comfortable dreadnought body, professional-grade tonewoods, and fast-playing necks make this acoustic great first instrument for the beginner.</p>
-            <a href="https://amzn.to/3eGpIF8"><button type="button" class="btn btn-warning">$199</button></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://amzn.to/2Kkjm0e"><img class="card-img-top" src="{% static 'aff/images/CherryElec_1.jpg' %}" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://amzn.to/2Kkjm0e" style="text-decoration:none">Schecter</a>
-            </h4>
-            <p class="card-text">The Schecter Omen Extreme-6 FR Electric Guitar is loaded with the features that modern guitarists seek-like the beautifully figured, carved maple top on a basswood body with a comfortable double-cutaway that gives you full access to the fast maple neck fitted with a rosewood fingerboard with 24 extra-jumbo frets.</p>
-            <a href="https://amzn.to/2Kkjm0e"><button type="button" class="btn btn-warning">$489</button></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://amzn.to/3cxZVNI"><img class="card-img-top" src="{% static '/aff/images/washburn_wd7SCE.jpg' %}" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://amzn.to/3cxZVNI" style="text-decoration:none">Washburn</a>
-            </h4>
-            <p class="card-text">A personal favorite. The scalloped Sitka Spruce bracing help define note clarity throughout the entire register of the instrument, making it unparalleled in it’s price range. Whether at the living room jam, the campfire singalong or the stage; This Washburn Harvest D7SCE will be the perfect companion. As with most acoustic guitars used guitars have better tone.</p>
-            <a href="https://amzn.to/3cxZVNI"><button type="button" class="btn btn-warning">$249</button></a>
-          </div>
+<div class="row">
+
+    <div class="col-lg-3 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <a href="https://amzn.to/2RP6ymX"><img class="card-img-top" src="{% static '/aff/images/MartinDCX1AE.jpg' %}" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="https://amzn.to/2RP6ymX" style="text-decoration:none">Martin DCX1AE</a>
+          </h4>
+          <p class="card-text">A Sitka spruce top is paired with mahogany patterned high-pressure laminate (HPL) back and sides for a very classic looking Martin Dreadnought. This 14-fret guitar cutaway features a hand-rubbed top and neck finish with a Richlite fingerboard and bridge and Fishman Sonitone electronics.</p>
+          <a href="https://amzn.to/2RP6ymX"><button type="button" class="btn btn-warning">$679</button></a>
         </div>
       </div>
     </div>
-    <!-- /.row -->
+    <div class="col-lg-3 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <a href="https://amzn.to/3eGpIF8"><img class="card-img-top" src="{% static '/aff/images/YamahaDread_1.jpg' %}" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="https://amzn.to/3eGpIF8" style="text-decoration:none">Yamaha Dreadnought</a>
+          </h4>
+          <p class="card-text">The perfect entry level guitar. The comfortable dreadnought body, professional-grade tonewoods, and fast-playing necks make this acoustic great first instrument for the beginner.</p>
+          <a href="https://amzn.to/3eGpIF8"><button type="button" class="btn btn-warning">$199</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <a href="https://amzn.to/2Kkjm0e"><img class="card-img-top" src="{% static 'aff/images/CherryElec_1.jpg' %}" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="https://amzn.to/2Kkjm0e" style="text-decoration:none">Schecter</a>
+          </h4>
+          <p class="card-text">The Schecter Omen Extreme-6 FR Electric Guitar is loaded with the features that modern guitarists seek-like the beautifully figured, carved maple top on a basswood body with a comfortable double-cutaway that gives you full access to the fast maple neck fitted with a rosewood fingerboard with 24 extra-jumbo frets.</p>
+          <a href="https://amzn.to/2Kkjm0e"><button type="button" class="btn btn-warning">$489</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <a href="https://amzn.to/3cxZVNI"><img class="card-img-top" src="{% static '/aff/images/washburn_wd7SCE.jpg' %}" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="https://amzn.to/3cxZVNI" style="text-decoration:none">Washburn</a>
+          </h4>
+          <p class="card-text">A personal favorite. The scalloped Sitka Spruce bracing help define note clarity throughout the entire register of the instrument, making it unparalleled in it’s price range. Whether at the living room jam, the campfire singalong or the stage; This Washburn Harvest D7SCE will be the perfect companion. As with most acoustic guitars used guitars have better tone.</p>
+          <a href="https://amzn.to/3cxZVNI"><button type="button" class="btn btn-warning">$249</button></a>
+        </div>
+      </div>
+    </div>
+</div>
+  <!-- /.row -->
 <br/>
-	<hr>
+  <hr>
 <br/>
-    <!-- Features Section -->
-
-      <div class="col-lg-6">
-<script type="text/javascript">
-amzn_assoc_placement = "adunit0";
-amzn_assoc_tracking_id = "guitarawesome-20";
-amzn_assoc_ad_mode = "manual";
-amzn_assoc_ad_type = "smart";
-amzn_assoc_marketplace = "amazon";
-amzn_assoc_region = "US";
-amzn_assoc_linkid = "35c6ab57886bb70b3abf588b381eb889";
-amzn_assoc_asins = "B01EHJL652,B01N4DSQBR,B07X5F81JS,B07R3SD5MM";
-amzn_assoc_search_bar = "true";
-amzn_assoc_title = "More Favs";
-</script>
-<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
-      </div>
+  <!-- Features Section -->
+<div class="container-fluid padding">
+<div class="row welcome text center">
+    <div class="col-lg-10">
+        <script type="text/javascript">
+        amzn_assoc_placement = "adunit0";
+        amzn_assoc_tracking_id = "guitarawesome-20";
+        amzn_assoc_ad_mode = "manual";
+        amzn_assoc_ad_type = "smart";
+        amzn_assoc_marketplace = "amazon";
+        amzn_assoc_region = "US";
+        amzn_assoc_linkid = "35c6ab57886bb70b3abf588b381eb889";
+        amzn_assoc_asins = "B01EHJL652,B01N4DSQBR,B07X5F81JS,B07R3SD5MM";
+        amzn_assoc_search_bar = "true";
+        amzn_assoc_title = "More Favs";
+        </script>
+        <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
     </div>
-    <!-- /.row -->
+  </div>
+</div>
+  <!-- /.row -->
 
-    <hr>
+  <hr>
 
-    <!-- Call to Action Section -->
-    <div class="col mb-4">
-      <div class="col-md-8">
-        <p>Music styles are many and guitars are no different. Expand and challenge your skills by covering some of the greatests songs from classic to trendy. </p>
-      </div>
-  
-      <div class="col-md-4">
-
-        <a class="btn btn-lg btn-warning btn-block" href="https://youtu.be/y4FQZ0IB6MA" target="_blank">cover of the week</a>
-      </div>
-    </div>
-   <!--  <div class="row-md-4 center">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/y4FQZ0IB6MA?rel=0&amp; controls=0" frameborder="0" allowfullscreen></iframe>
-        </div> -->
-
-
+  <!-- Call to Action Section -->
+  <div class="col mb-4">
+    <div class="col-md-8">
+      <p>Music styles are many and guitars are no different. Expand and challenge your skills by covering some of the greatests songs from classic to trendy. </p>
     </div>
 
+    <div class="row-12 center">
+
+      <a class="btn btn-lg btn-warning btn-block" href="https://youtu.be/y4FQZ0IB6MA" target="_blank">Covers</a>
+    </div>
+  </div>
+ <!--  <div class="row-md-4 center">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/y4FQZ0IB6MA?rel=0&amp; controls=0" frameborder="0" allowfullscreen></iframe>
+      </div> -->
+
+<!-- /.container -->
+
+<!-- Footer -->
+<div class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Guitar Awesome 2020</p>
   </div>
   <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Guitar Awesome 2020</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="{% static 'aff/vendor/jquery/jquery.min.js' %}"></script>
-  <script src="{% static 'aff/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-
-</body>
+</footer>
+</div>
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'aff/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'aff/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 </html>

@@ -8,7 +8,7 @@ urlpatterns = [
 	path('aff/', include('aff.urls')),
 
 	path('', views.home, name='home'),
-	path('home/', views.about, name='about'),
+	path('about/', views.about, name='about'),
 	path('blog/', views.blog, name='blog'),
-	 path('covers/', views.covers, name='covers'),
+	path('covers/', views.covers, name='covers'),
 ]
