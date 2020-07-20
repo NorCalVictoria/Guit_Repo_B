@@ -1,0 +1,44 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="{% static 'aff/css/guitarSite.css' %}" rel="stylesheet">
+	
+	<title>Awesome</title>
+</head>
+<body>
+	<header class="v-header container-vid">
+		<div class="fullscreen-video-wrap">
+			<video src="{% static 'aff/landGA.mov' %}" autoplay="true" loop="true">video here</video>
+		</div>
+		<div class="header-overlay"></div>
+		<div class="header-content">
+		<h1> Guitar Fascination</h1>
+		<p> From musicians to music and instruments one thing is true. You're only as good as your tools. 
+		Guitars are a means of communication.</p>
+		
+		<a href="{% url 'home' %}" class="btn-l">Site</a>
+		</div>
+	</header><!-- /header -->
+	<section class="section section-a">
+		<div class="container-vid">
+	     <h1>Section A</h1>
+	       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellendus veritatis, quodmollitia in nostrum quidem, recusandae nihil eos itaque.</p>
+        </div>
+   </section>
+
+  <section class="section section-b">
+		<div class="container-vid">
+	     <h1>Section B</h1>
+	       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellendus veritatis, quodmollitia in nostrum quidem, recusandae nihil eos itaque.</p>
+        </div>
+   </section>
+</body>
+</html>
+
