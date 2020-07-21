@@ -1,5 +1,5 @@
 
-*{
+* {
 	box-sizing: border-box;
 	font-family: 'Segoe UI', Tohoma, Geneva, Verdana, sans-serif;
 }
@@ -59,7 +59,7 @@
   border: #f4e0bf 1px solid;
   padding:10px;
   border-radius: 10px;
-  margin-top: 30px
+  margin-top: 30px;
 }
 
 .btn-l:hover{
@@ -80,9 +80,7 @@
 
 .section{
 	padding: 20px 0;
-
 }
-
 .section-b {
 	background: #333;
 	color: #fff;
@@ -90,10 +88,6 @@
 .section-a {
 	padding-bottom: 30px;
 }
-
-
-
-
 
 @media(max-width: 960px) {
 	.container{
@@ -114,8 +108,32 @@
     color: white !important;
     font-size: 20px !important;
  }
- 
- .overlay-block {
+
+/* .y-pop {
+ 	transform: translate(-50%,-50%);
+ 	margin:0;
+ 	padding:0 20px;
+ 	text-shadow: 0 0 20px #ff005b;
+ }*/
+/*.y-pop:after {
+	z-index: -1;
+	color: #ff005b;
+	filter: blur(15px);
+}
+.y-pop:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	background: #fe3a80;
+	z-index: -2;
+	opacity: .5;
+	filter: blur(40px);
+}*/
+
+ .overlay-block-1 {
   height: 100vh;
   width : 100vw;                                                                                             
   position: absolute;
@@ -124,16 +142,14 @@
   left: 0;
   right: 0;
   /*opacity: 0.50;*/
-  z-index: 4;
- /* transition: 0.5s ease;*/
+  z-index: 5;
+  transition: 0.5s ease;
  /* background-color: #fff;*/
-  background: linear-gradient( hsla(0, 60%,  40%, 0.3),80%,#353938);  
+  background: linear-gradient(hsla(200,5%, 20%, 0.7), 90%, #353938);
+
   							/*(startColor, saturation, lightness, alphaOpacity)midPoint,endColor*/
   							     /*hslpicker.com*/
- 
  }
-
-
 
  .col-lg-6 {
    width: 20%;
@@ -168,5 +184,19 @@ body {
 
 .container {
 	width: 100vw;
-
 }
+span {
+    white-space:pre;
+  
+}
+
+audio:hover , audio:focus , audio:active {
+/*	box-shadow: 15px 15px 20px rgba(0,0.0.0.4);
+*/	transform: scale(1.15); 
+	
+ }
+audio{
+	transition: all 0.5s linear;
+/*	box-shadow: 2px 2px 4px 0px #006773;
+*/	border-radius: 7px;
+	

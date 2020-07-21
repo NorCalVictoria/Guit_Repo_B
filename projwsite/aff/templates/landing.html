@@ -15,7 +15,7 @@
 <body>
 	<header class="v-header container-vid">
 		<div class="fullscreen-video-wrap">
-			<video src="{% static 'aff/landGA.mov' %}" autoplay="true" loop="true">video here</video>
+			<video src="{% static 'aff/landGA.mov' %}" autoplay="true" muted loop="true" poster="{% static '/aff/images/guit_stg_still.png' %}"></video>
 		</div>
 		<div class="header-overlay"></div>
 		<div class="header-content">
@@ -23,20 +23,37 @@
 		<p> From musicians to music and instruments one thing is true. You're only as good as your tools. 
 		Guitars are a means of communication.</p>
 		
-		<a href="{% url 'home' %}" class="btn-l">Site</a>
+		<br>
+		
+		<div>
+		     <a href="{% url 'home' %}" class="btn-l">Site</a>
+	    </div>
 		</div>
+		<div>
+			<button onclick="document.getElementById('player').play()">Play</button>
+			<button onclick="document.getElementById('player').pause()">Pause</button>
+			<button onclick="document.getElementById('player').volume+=0.1">Volume Up</button>
+			<button onclick="document.getElementById('player').volume-=0.1">Volume Down</button>
+        </div> 
 	</header><!-- /header -->
+
+	<div class="row" align="center" id="player">
+	    <audio controls loop preload="metadata" >
+		  <source  src="{% static 'aff/guit_aud.mp3' %}" type="audio/mp3" controls>
+		</audio>
+	</div>
+
 	<section class="section section-a">
 		<div class="container-vid">
-	     <h1>Section A</h1>
-	       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellendus veritatis, quodmollitia in nostrum quidem, recusandae nihil eos itaque.</p>
+	     <h1>Music</h1>
+	       <p> Welcome to your world. Theres no turning back. Even while we sleep.</p>
         </div>
    </section>
 
   <section class="section section-b">
 		<div class="container-vid">
-	     <h1>Section B</h1>
-	       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellendus veritatis, quodmollitia in nostrum quidem, recusandae nihil eos itaque.</p>
+	     <h1>Instruments</h1>
+	       <p> Blue jeans , white shirt. You walked into the room you know you make my eyes burn. </p>
         </div>
    </section>
 </body>
