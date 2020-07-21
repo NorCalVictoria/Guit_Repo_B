@@ -14,13 +14,19 @@
 
   <!-- Bootstrap core CSS -->
   <link href="{% static 'aff/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-
+  <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <style type="text/css">
+      .fa{
+          font-size: 30px;
+          margin-top: 20px;
+          margin-bottom:20px;
+      }
+  </style>
   <!-- Custom styles for this template -->
-  <link href="{% static 'aff/css/modern-business.css' %}" rel="stylesheet">
+  <link href="{% static 'aff/css/guitSite.css' %}" rel="stylesheet">
 
 </head>
 
-<body>
 
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -32,10 +38,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'covers' %}">Covers</a>
+            <a class="nav-link" href="{% url 'about' %}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'about' %}">About</a>
+            <a class="nav-link" href="{% url 'covers' %}">Covers</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Media</a>
@@ -44,55 +53,75 @@
       </div>
     </div>
   </nav>
-
-
-
-
-
-<!-- <span style="color:whitesmoke;">Guitar</span>&nbsp;<span style="color:#FFD300;">Awesome</span> -->
-
-
   <header>
 
   </header>
-
   <!-- Page Content -->
-  <div class="container">
-
 <br/>
 	<hr>
 <br/>
-
     <!-- Marketing Icons Section -->
  
+<div class="container">
+           <div class="row welcome text-center" >
+      <div class="col-md-10" style="padding-top: 20px;">
+        <h1 class="display-4">Inspiration of the Month</h1>
+      </div>
 
-    <!-- Portfolio Section -->
-    <strong><h1 class="my-4"> Blog Content Coming</h1> </strong>
-          <div class="row-lg-12 col-sm-12 portfolio-item">
-        <div class="card h-100" style="width: 10rem">
-          <a href="https://amzn.to/3cxZVNI"><img class="card-img-top" src="{% static '/aff/images/washburn_wd7SCE.jpg' %}" alt=""></a>
-          
-        </div>
-        <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://amzn.to/3cxZVNI" style="text-decoration:none">Washburn</a>
-            </h4>
-            <p class="card-text">A personal favorite. The scalloped Sitka Spruce bracing help define note clarity throughout the entire register of the instrument, making it unparalleled in it’s price range. Whether at the living room jam, the campfire singalong or the stage; This Washburn Harvest D7SCE will be the perfect companion. As with most acoustic guitars used guitars have better tone.</p>
-<!--             <a href="https://amzn.to/3cxZVNI"><button type="button" class="btn btn-warning">$249</button></a>
- -->          </div>
+           <div class="col-lg-10 col-md-10 col-sm-12 post-title-block" style="padding-top:20px">
+               <h5 class="display-6">Ed Sheeran</h5>    
+            </div>
+
       </div>
     </div>
 
-    
+    <br/>
+      <hr class="col-md-10">
+    <br/>
+<div class="wrapper" style="margin:0 auto; width:1125px;">
+  <div class="col-lg-10 text-center col-md-10 col-sm-12">
+              <p style="text-align:justify">Ed Sheeran is probably one of the most talented songwriters of our time. Most artists aren't able to achieve as many number one hits in as little time as he has. Some songs can take months to perfect. In our flooded market of music his music reigns supreme and shows no signs of slowing anytime soon. </p>
+         <blockquote>
+              <p>“Be nice to everyone, always smile, and appreciate things because it could all be gone tomorrow.”
+</p>
+              <footer>― Ed Sheeran <cite title="Source Title">Source Title</cite></footer>
+         </blockquote>
+              <p style="text-align:justify">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p style="text-align:justify">Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+          <blockquote>
+              <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </blockquote>
+        <div class="row col 2">
+          <div class="image-block">
+               <img src="{% static '/aff/images/sheeranStage.jpg' %}" width="925" height="700">
+          </div>
 
-    <!-- /.row -->
+              <p style="text-align:justify; padding-top:20px">Ed Sheeran does what he does best performing live on stage. He's shown here with his Ed Sheeran signature series Little Martin . <a href="https://amzn.to/2CrawNU"><button type="button" class="btn btn-warning">Get now</button></a> </p>
+              <div class="col 4"><img src="{% static '/aff/images/lrBaggs.webp' %}" width="725" height="350">
+              </div>
+          </div>
+  </div>       
+
+            <div class="col-md-10">
+               <p class="lead">Do you have an acoustic without any electronics at all ? This pickup (pictured above) has a magnetic technology that produces a sound unparalleled when reproducing a realistic acoustic guitar resonance.</p>
+
+
+               <p style="text-align:justify">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+</div>
+                 <div class="well col-12 text-center">
+                    <large>Video Here</large>
+                </div>
+             </div>
+         </div>
+
 <br/>
 	<hr>
 <br/>
     <!-- Features Section -->
-<div class="container-fluid padding">
-<div class="row">
-    <div class="col-lg-6 col-sm-4 center">
+<div class="container">
+<div class="row welcome text center">
+    <div class="col-lg-10">
         <script type="text/javascript">
         amzn_assoc_placement = "adunit0";
         amzn_assoc_tracking_id = "guitarawesome-20";
@@ -115,31 +144,26 @@
     <hr>
 
     <!-- Call to Action Section -->
-    <div class="col mb-4">
-      <div class="col-md-8">
-        <p>Music styles are many and guitars are no different. Expand and challenge your skills by covering some of the greatests songs from classic to trendy. </p>
-      </div>
-  
-      <div class="col-lg-6">
+    
+      <i class="fa fa-heart col-md-12 text-center"> super cool</i>
+     <div class="row text-center">
+        <div class="col-lg-4 offset-2 " style="padding-left:80px;">
+           <a class="btn btn-md btn-warning btn-block" href="{% url 'covers' %}" target="_blank">cover of the week</a>
+        </div>
+       <div class="col-md-4">
+            <p>The history of music goes back as far as history itself. Language boundaries are shattered one note at a time. </p>
+       </div>
+     </div>
 
-        <a class="btn btn-lg btn-warning btn-block" href="https://youtu.be/y4FQZ0IB6MA" target="_blank">cover of the week</a>
-      </div>
-    </div>
-   <!--  <div class="row-md-4 center">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/y4FQZ0IB6MA?rel=0&amp; controls=0" frameborder="0" allowfullscreen></iframe>
-        </div> -->
-
-
-    </div>
-
-  </div>
-  <!-- /.container -->
-
+<br/>
+  <hr>
+<br/>
   <!-- Footer -->
   <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Guitar Awesome 2020</p>
+    <div class="row text-center">
+      <div class="col-md col-lg">
+      <a class="navbar-brand" href="{% url 'home' %}"><span style="color:whitesmoke; font-size:10pt;">&copy Guitar</span>&nbsp;<span style="color:#FFD300; font-size:11pt;">Awesome </span><span style="color:whitesmoke; font-size:10pt;">2020</a>
+      </div> 
     </div>
     <!-- /.container -->
   </footer>
