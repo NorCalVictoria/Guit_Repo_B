@@ -8,13 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  
+  <link rel="icon" type="image/x-icon" href="{% static 'aff/images/favicon.ico' %}">
   <strong><title href="#">Guitar Awesome</title></strong>
-  <link rel="shortcut icon" type='image/png' href='/aff/images/favicon.png'/>
-
   <!-- Bootstrap core CSS -->
   <link href="{% static 'aff/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-
+  <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
   <!-- Custom styles for this template -->
   <link href="{% static 'aff/css/guitarSite.css' %}" rel="stylesheet">
 
@@ -213,7 +211,7 @@
         <button type="button" class="btn btn-warning">Sign up !</button>
       </div>
 
-      <div class="col-lg-6 offset-1">
+      <div class="col-lg-6 offset">
             <script type="text/javascript">
             amzn_assoc_placement = "adunit0";
             amzn_assoc_tracking_id = "guitarawesome-20";
@@ -254,6 +252,50 @@
 
   </div>
   <!-- /.container -->
+<div class="container-f">
+<foot>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+          <h3>Guitar <span style="color:#FFD300; font-size:18pt;">Awesome</span></h3>
+          <p>Your one go-to for all of your guitar needs. Knowing what to look for when buying an instrument isn't easy. Knowing what to do once you have one can be even more challenging. Guitar Awesome guides you on the right path to progressing through your guitar journey!</p>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
+          <h2>Useful Links</h2>
+         <ul>
+           <li class="nav-item"><a class="nav-link"href="{% url 'about' %}">About</a></li>
+           <li><a href="{% url 'covers' %}">Covers</a></li>
+           <li><a href="{% url 'home' %}">Store</a></li>
+           <li><a href="{% url 'blog' %}">Blog</a></li>
+           <li><a href="#">Lessons</a></li>
+         </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+          <h2> Follow Us </h2>
+          <p>Please Follow us on our Social Media Platforms in order to keep updated . With new trends always on the rise you'll stay ahead and on beat with our monthly newsletter.</p>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-pinterest"></i></a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
+          <h2>Newsletter</h2>
+          <p>Sign up for special discounts and offers !</p>
+          <form action="">
+            <input type="email"><input type="submit" value="Subscribe">
+          </form>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <p class="foot-bottom-text"></p>
+</foot>
+</div>
+
+
+
+
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
@@ -264,6 +306,10 @@
     </div>
     <!-- /.container -->
   </footer>
+
+
+
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'aff/vendor/jquery/jquery.min.js' %}"></script>
