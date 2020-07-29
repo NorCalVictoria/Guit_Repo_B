@@ -16,11 +16,11 @@
 <body>
 	<header class="v-header container-vid">
 		<div class="fullscreen-video-wrap">
-			<video src="{% static 'aff/landGA.mov' %}" autoplay="true" muted loop="true" poster="{% static '/aff/images/guit_stg_still.png' %}"></video>
+			<video src="{% static 'aff/landGA.mov' %}" autoplay="true" muted loop="true" poster="{% static 'aff/images/guit_stg_still.png' %}"></video>
 		</div>
 		<div class="header-overlay"></div>
 		<div class="header-content" align="center">
-		<h1> Guitar Fascination</h1>
+		<h1> InstruMental</h1>
 		<p> From musicians to music and instruments one thing is true. You're only as good as your tools. 
 		Guitars are a means of communication.</p>
 		
@@ -39,20 +39,21 @@
            <source src="{% static 'aff/guit_aud.mp3' %}" type='audio/mp3'>
         </audio>
 	</div>
-
+<div class="wrapper">
 	<section class="section section-a">
 		<div class="container-vid">
 	     <h1>Music</h1>
 	       <p> Welcome to your world. Theres no turning back. Even while we sleep.</p>
         </div>
    </section>
-
+			
   <section class="section section-b">
-		<div class="container-vid">
+		<div class="container-vid col-lg-12">
 	     <h1>Instruments</h1>
 	       <p> Blue jeans , white shirt. You walked into the room you know you make my eyes burn. It was like James Dean for sure.</p>
         </div>
    </section>
+</div>
 </body>
 </html>
 
