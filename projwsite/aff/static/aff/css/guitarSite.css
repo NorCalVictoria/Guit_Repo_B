@@ -290,25 +290,35 @@ h2 {
 	font-family: Poppins;
 	text-transform: uppercase;
 }
-
 .segment-three h2:before{
 	content: '|';
 	color: #c65039;
 	padding-right: 10px;
 }
-
-.segment-three a{
+.segment-three a {
 	background: #494848;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	display: inline-block;
 	border-radius: 50%;
 }
 .segment-three a i{
 	font-size: 20px;
-	color: #fff;
-	margin-left: 12px;
-	padding-bottom: 50px;
+	color: #fff; 
+	margin-left: 18px;
+	/*padding-bottom: 50px;*/
+}
+.fa-spotify:hover {
+    color: #1DB954!important;
+}
+.fa-twitter:hover {
+    color: #1DA1F2!important;
+}
+.fa-instagram:hover {
+    color: #fb3958!important;
+}
+.fa-facebook:hover {
+    color: #3B5998!important;
 }
 
 .segment-four h2{
@@ -336,18 +346,3 @@ h2 {
 	line-height: 75px;
 }
 
-.fa-facebook:hover {
-    color: #3B5998!important;
-}
-
-.fa-twitter:hover {
-    color: #1DA1F2!important;
-}
-
-.fa-instagram:hover {
-    color: #fb3958!important;
-}
-
-.fa-spotify:hover {
-    color: #1DB954!important;
-}
