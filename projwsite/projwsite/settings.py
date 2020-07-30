@@ -15,7 +15,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')mf15d$6h)o0*e-$&wf9!*%2#d*3yekv(x9qgph!*q&&p_dxjl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =      False # True   # False for PRODUCTION
+DEBUG =    True   #  False #  False for PRODUCTION
 
 ALLOWED_HOSTS = ['*']
 
@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'aff',
     'django_extensions',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +61,7 @@ TEMPLATES = [
         },
     },
 ]
-
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 WSGI_APPLICATION = 'projwsite.wsgi.application'
 
 
@@ -74,6 +75,8 @@ DATABASES = {
     }
 }
 
+DEFAULT_FROM_EMAIL = 'voxvictoria@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

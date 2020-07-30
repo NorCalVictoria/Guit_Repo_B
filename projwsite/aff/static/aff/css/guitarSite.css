@@ -11,7 +11,7 @@
 	color: #f4e0bf;
 }
 .container-vid {
-	max-width: 960px;
+	max-width: 1000px;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	margin: auto;
@@ -57,7 +57,6 @@
 	z-index : 1;
 	opacity : 0.65;
 }
-
 .header-content {
 	z-index:2;
 }
@@ -88,14 +87,14 @@
   transition-timing-function: ease;
   /*border-radius: 50%;*/
 }
-/*.btn-l{
-	background:#34B3A0;
-	color:#f4e0bf;
-	font-size: 1.2rem;
-	padding: 1rem 2rem;
-	text-decoration: none;
-}*/
 
+.super-cool {
+	
+	justify-items: end;
+}
+.itm-1 {
+	justify-self: center;
+}
 .section{
 	padding: 20px 0;
 }
@@ -231,12 +230,13 @@ audio {
           margin-top: 20px;
           margin-bottom:20px;
       }
+
 .container-f{
 	padding: 0;
 	margin: 0;
 
 }
-p {
+.p-fo {
 	color: #999;
 	line-height: 25px;
 }
@@ -248,7 +248,7 @@ h2 {
 }
 .footer-top{
 	background: #353938;
-	padding: 80px 0;
+	padding: 60px 0;
 }
 .segment-one h3{
 	font-family: Courgette;
@@ -290,25 +290,35 @@ h2 {
 	font-family: Poppins;
 	text-transform: uppercase;
 }
-
 .segment-three h2:before{
 	content: '|';
 	color: #c65039;
 	padding-right: 10px;
 }
-
-.segment-three a{
+.segment-three a {
 	background: #494848;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	display: inline-block;
 	border-radius: 50%;
 }
 .segment-three a i{
 	font-size: 20px;
-	color: #fff;
-	margin-left: 12px;
-	padding-bottom: 50px;
+	color: #fff; 
+	margin-left: 18px;
+	/*padding-bottom: 50px;*/
+}
+.fa-spotify:hover {
+    color: #1DB954!important;
+}
+.fa-twitter:hover {
+    color: #1DA1F2!important;
+}
+.fa-instagram:hover {
+    color: #fb3958!important;
+}
+.fa-facebook:hover {
+    color: #3B5998!important;
 }
 
 .segment-four h2{
@@ -332,6 +342,7 @@ h2 {
 
 .foot-bottom-text{ 
 	text-align: center;
-	background: #000;
+	background: #f4e0bf;
 	line-height: 75px;
 }
+
