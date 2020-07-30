@@ -288,8 +288,8 @@
 
           <form method="POST">
                   {% csrf_token %}
-                  {{ form|crispy }}
-                  <!-- {% crispy form %} -->
+<!--                   {{ form|crispy }}
+ -->                  {% crispy form %}
 
                 <div class="form-group">
                   <!-- <label for="exampleInputEmail1">Email address</label> -->
