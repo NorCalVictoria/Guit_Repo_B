@@ -21,7 +21,7 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap'
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
