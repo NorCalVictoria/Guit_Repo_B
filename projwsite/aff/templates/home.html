@@ -286,7 +286,7 @@
           <h2>Newsletter</h2>
           <p class="p-fo">Sign up for special discounts and offers !</p>
 
-          <form method='post'>
+          <form method="POST">
                   {% csrf_token %}
                   {{ form|crispy }}
                   <!-- {% crispy form %} -->
