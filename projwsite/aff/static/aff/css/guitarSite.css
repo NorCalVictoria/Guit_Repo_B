@@ -335,3 +335,19 @@ h2 {
 	background: #f4e0bf;
 	line-height: 75px;
 }
+
+.fa-facebook:hover {
+    color: #3B5998!important;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2!important;
+}
+
+.fa-instagram:hover {
+    color: #fb3958!important;
+}
+
+.fa-spotify:hover {
+    color: #1DB954!important;
+}
