@@ -62,7 +62,7 @@ python-decouple==3.3
 pytz==2018.5
 pyxdg==0.25
 PyYAML==3.12
-requests==1.0.0
+requests==2.20.0
 requests-unixsocket==0.1.5
 s3transfer==0.2.0
 SecretStorage==2.3.1
