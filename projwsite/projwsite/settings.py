@@ -1,5 +1,5 @@
 
-VIRTUAL_ENV="/Users/ENGINE/src/ALL_PROJ/2website_aff/env"
+VIRTUAL_ENV="/home/ubuntu/Guit_Repo_B/venv"
 
 
 import os
