@@ -8,6 +8,7 @@ from .forms import ContactForm
 # Create your views here.
 def land(request):
 	return render(request, 'landing.html')
+	
 def home(request):
 	return render(request, 'home.html', {})
 
