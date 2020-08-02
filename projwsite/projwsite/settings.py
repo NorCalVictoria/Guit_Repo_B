@@ -1,5 +1,5 @@
 
-VIRTUAL_ENV="/home/ubuntu/Guit_Repo_B/venv"
+VIRTUAL_ENV="/Users/ENGINE/src/ALL_PROJ/2website_aff/env"
 
 
 import os
@@ -15,7 +15,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')mf15d$6h)o0*e-$&wf9!*%2#d*3yekv(x9qgph!*q&&p_dxjl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =    False # True   #   False for PRODUCTION
+DEBUG =   True   #  False #   False for PRODUCTION
 
 ALLOWED_HOSTS = ['*']
 
