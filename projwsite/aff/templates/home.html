@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
-{% load crispy_forms_tags %}
-
+<!-- {% load crispy_forms_tags %} -->
 
 <html lang="en">
  
@@ -249,8 +248,6 @@
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/y4FQZ0IB6MA?rel=0&amp; controls=0" frameborder="0" allowfullscreen></iframe>
         </div> -->
-
-
     </div>
 
   </div>
@@ -282,40 +279,32 @@
           <a href="#"><i class="fa fa-instagram"></i></a>
           <a href="#"><i class="fa fa-facebook"></i></a>
         </div>
+
         <div class="col-md-3 col-sm-4 segment-four">
           <h2>Newsletter</h2>
-          <p class="p-fo">Sign up for special discounts and offers !</p>
+          <p class="p-fo">Sign up for special discounts and offers !</p>  
 
-          <form method="POST">
-                  {% csrf_token %}
-<!--                   {{ form|crispy }}
- -->                  {{ form|crispy }}
+         <form  action="" method="POST">
+             
+             <table border="2">
+              {% csrf_token %}
+               {{ form }} 
+             <!--   <input type="text"  name="post" placeholder="email"> -->
+             </table>
+           <button type="submit" style="margin: 10px">Submit</button>
+         </form>   
+         <h1>{{ post }} </h1>     
+       </div>
 
-                <div class="form-group">
-                  <!-- <label for="exampleInputEmail1">Email address</label> -->
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="only your email" aria-describedby="emailHelp">
-                  <small id="emailHelp" class="form-text text-muted">We will NOT share your email. Ever.</small>
-                </div>
-                <button class="btn-warning btn-block-sm">Submit</button>
-         </form>
-<!--        
-          <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }} 
-            <input type="text">        
-            <button type="submit">Submit</button>  
-          </form>
-          <h2>{{ text }}</h2>
- -->
         </div> 
       </div>
     </div>
   </div>
-  <p class="foot-bottom-text"></p>
+ <hr style="padding: none; background-color: #999">
 </foot>
 </div>
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-5" style="background: #353938">
     <div class="row text-center">
       <div class="col-md-12 col-lg-12">
       <a class="navbar-brand" href="{% url 'home' %}"><span style="color:whitesmoke; font-size:10pt;">&copy Guitar</span><span style="color:#FFD300; font-size:11pt;">Awesome </span><span style="color:whitesmoke; font-size:10pt;"> 2020</a>

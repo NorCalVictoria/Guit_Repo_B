@@ -1,34 +1,34 @@
+from django.views.generic import TemplateView
 
-from django.http import HttpResponse,request, HttpResponseRedirect
-from django.core.mail import send_mail, BadHeaderError
 from django.shortcuts import render, redirect
 
 from .forms import ContactForm 	
 
+
 # Create your views here.
 def land(request):
 	return render(request, 'landing.html')
-	
+
+
 def home(request):
-	return render(request, 'home.html', {})
-
-def emailView(self, request):
-	template_name = 'home.html'
-
+	form = ContactForm()
 	if request.method == 'POST':
+
+		# print(request.user)
+		# print(request.POST)
 		form = ContactForm(request.POST)
-		if form.isValid():
-
-			text = form.cleaned_data['email']
-			form.save()
-	args = {'form':form, 'text':text}		
-
-	# form = ContactForm() #initializing another blank form
-	return render(request, self.template_name, {'form':form}, args)
-	
-	# return redirect('success!')
+		if form.is_valid():
+			post = form.save(commit=False)
+			post.user = request.user
+			post.save()
+			form = ContactForm()
+	context = {'form':form}
+	return render(request, 'home.html', context)
 
 
+	args = {'form': form, 'text': text}
+	return render(request, self.template_name, args)
+ 
 def about(request):
 	return render(request, 'about.html')
 

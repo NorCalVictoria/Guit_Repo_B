@@ -3,6 +3,7 @@ VIRTUAL_ENV="/Users/ENGINE/src/ALL_PROJ/2website_aff/env"
 
 
 import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "projwsite.settings")
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,8 +22,6 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
-
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -121,8 +120,5 @@ STATIC_URL = '/aff/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'aff/static/'),
 ]
-
-
-
-
-
+# CSRF_COOKIE_SECURE = False
+# SESSION_COOKIE_SECURE = False

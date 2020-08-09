@@ -296,6 +296,7 @@ h2 {
 	padding-right: 10px;
 }
 .segment-three a {
+
 	background: #494848;
 	width: 50px;
 	height: 50px;
@@ -306,7 +307,7 @@ h2 {
 	font-size: 20px;
 	color: #fff; 
 	margin-left: 18px;
-	/*padding-bottom: 50px;*/
+	padding-bottom: 200px;
 }
 .fa-spotify:hover {
     color: #1DB954!important;
@@ -341,8 +342,11 @@ h2 {
 }
 
 .foot-bottom-text{ 
+	background: #353938 !important;
 	text-align: center;
 	background: #f4e0bf;
 	line-height: 75px;
 }
-
+.footer py-5 {
+	padding: none;
+}
