@@ -1,5 +1,7 @@
 
-VIRTUAL_ENV="/Users/ENGINE/src/ALL_PROJ/2website_aff/env"
+
+
+VIRTUAL_ENV/="home/ubuntu/Guit_Repo_B/venv"
 
 
 import os
@@ -16,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')mf15d$6h)o0*e-$&wf9!*%2#d*3yekv(x9qgph!*q&&p_dxjl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =   True   #  False #   False for PRODUCTION
+DEBUG =  False   #  False for PRODUCTION
 
 ALLOWED_HOSTS = ['*']
 
@@ -113,7 +115,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+#CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 STATIC_URL = '/aff/static/'
 
