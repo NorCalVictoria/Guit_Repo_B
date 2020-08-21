@@ -37,7 +37,7 @@
 		display: none;
 	}
 	body{
-		background: url('static/aff/images/guit_stg_still.png');
+		background: url('guit_stg_still.png');
 		background-size: cover;
 	}
 }
