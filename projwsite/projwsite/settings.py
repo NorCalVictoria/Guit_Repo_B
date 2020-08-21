@@ -77,6 +77,18 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'dbmasteruser',
+#         'USER': 'dbmasteruser',
+#         'PASSWORD': '($1S2NhT~gRv.hXMlAQj9n]kj]<,)K#6',
+#         'HOST': 'ls-652f5476a10cea2009615c8a44e34c588c9cffe1.c1sebzs839ys.us-west-2.rds.amazonaws.com',
+#         'PORT': '5432'
+#     }
+# }
+# run migrations on new server 
+
 DEFAULT_FROM_EMAIL = 'voxvictoria@gmail.com'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
@@ -122,5 +134,6 @@ STATIC_URL = '/aff/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'aff/static/'),
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # CSRF_COOKIE_SECURE = False
 # SESSION_COOKIE_SECURE = False
